@@ -45,11 +45,12 @@ body {
     background-color: var(--bg-color-gray);
 }
 
-/*.bg_bottom_waves {
-     background-image: url("./../img/wave.svg");
+/* .bg_bottom_waves {
+    background-image: url("./../img/wave.svg");
     background-position: bottom;
+    background-size: cover;
     width: 100%;
-    height: 200px;
+    height: 50px;
     color: lightgray;
 }     */
 
@@ -58,7 +59,7 @@ body {
  Header
  **********/
 #site_header {
-    height: 33%;
+    height: 500px;
     background-image: url("./../img/jumbo.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -79,7 +80,7 @@ body {
 .jumbo_text {
     height: 300px;
     width: 700px;
-    margin: 5rem auto;
+    margin: 4rem auto;
     text-align: center;
   /*   background-color: brown; */
 }
@@ -143,7 +144,7 @@ body {
     color: white;
     font-size: 15px;
     word-spacing: 5px;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .jumbo_text > button {
@@ -166,7 +167,7 @@ body {
  Main
  **********/
  #site_main {
-    height: 2800px;
+    height: 2700px;
   /*   background-color: red; */
 }
 
@@ -305,12 +306,13 @@ div > .box_content {
 .col_left {
     float: left;
     width: 30%;
-    height: 100%;
+    height: 300px;
 }
 
 .col_left > h5 {
     color: var(--footer-text-color);
     font-size: 20px;
+    margin-bottom: 1rem;
 }
 
 .language > img {
@@ -324,7 +326,15 @@ div > .box_content {
     font-size: 10px;
 }
 
-
+.fa {
+    padding: 0;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1rem 0;
+    color: white;
+}
 
 .col_right {
     float: right;
@@ -332,16 +342,64 @@ div > .box_content {
     height: 100%;
 }
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
+.info_sections {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.info_sections > h6 {
+    color: var(--footer-text-color);
+    font-size: 13px;
+}
+
+.info_sections > ul {
+    list-style-type: none;
+}
+
+.info_sections li {
+    color: var(--main-text-lightcolor);
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+#footer_top_container > hr {
+    border: 1px solid cornflowerblue;
+}
+
+#footer_bottom_container {
+    padding: 0.5rem 0;
+}
+
+#logo_bottom {
+    float: left;
+}
+
+#submit {
+    float: right;
+}
+
+#logo_bottom > img {
+    width: 80px;
+    height: 30px;
+}
+
+
+#submit > button {
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 10px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
-  }
-
-  #logo_bottom > img {
-      width: 80px;
-      height: 30px;
-  }
+   /*  display: inline-block; */
+    font-size: 11px;
+    font-weight: 600;
+    margin: 0;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: white;
+}
