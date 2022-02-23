@@ -1,0 +1,42 @@
+/* Commons */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+ --header-text-color: white;
+ --main-text-color: black;
+ --footer-text-color: cornflowerblue;
+ --bg-color-gray: lightgray;
+}
+
+/* Utility */
+
+/**********
+ Header
+ **********/
+#site_header {
+    height: 100vh;
+    background-color: blue;
+}
+
+/**********
+ Main
+ **********/
+ #site_main {
+    height: 100vh;
+    background-color: red;
+}
+/**********
+ Footer
+ **********/
+ #site_footer {
+    height: 100vh;
+    background-color: darkslategray;
+}
