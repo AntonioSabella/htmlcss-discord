@@ -14,6 +14,12 @@ body {
  --main-text-color: black;
  --footer-text-color: cornflowerblue;
  --bg-color-gray: lightgray;
+ --button-lightcolor: white;
+ --button-darkcolor: black;
+ --button-bg-lightcolor: white;
+ --button-bg-darkcolor: rgba(0, 0, 0, 0.76);
+
+
 }
 
 /* Utility */
@@ -22,6 +28,16 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+
+#lighter {
+    background-color: var(--button-bg-lightcolor);
+    color: var(--button-darkcolor);
+}
+
+#darker {
+    background-color: var(--button-bg-darkcolor);
+    color: var(--button-lightcolor);
 }
 
 
@@ -50,7 +66,8 @@ body {
 .jumbo_text {
     height: 300px;
     width: 700px;
-    margin: 9rem auto;
+    margin: 5rem auto;
+    text-align: center;
   /*   background-color: brown; */
 }
 
@@ -99,6 +116,39 @@ body {
     margin: 0.5rem 2rem;
     cursor: pointer;
 }
+
+/* Jumbo text */
+
+.jumbo_text > h1 {
+    color: white;
+    font-size: 40px;
+    word-spacing: 5px;
+    margin-bottom: 1rem;
+}
+
+.jumbo_text > p {
+    color: white;
+    font-size: 15px;
+    word-spacing: 5px;
+    margin: 1rem 0;
+}
+
+.jumbo_text > button {
+    border-radius: 20px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+
+
 
 
 
