@@ -18,25 +18,102 @@ body {
 
 /* Utility */
 
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 /**********
  Header
  **********/
 #site_header {
-    height: 100vh;
-    background-color: blue;
+    height: 33%;
+    background-image: url("./../img/jumbo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.header_container {
+    width: 1000px;
+    height: 100%;
+   /*  background-color: bisque; */
+    margin: 0 auto;
+}
+
+#site_menu {
+    height: 60px;
+   /*  background-color: blueviolet; */
+}
+
+.jumbo_text {
+    height: 300px;
+    width: 700px;
+    margin: 9rem auto;
+  /*   background-color: brown; */
+}
+
+/* Navigation menu */
+
+.brand_logo {
+    margin-top: 5px;
+}
+
+.brand_logo,.access {
+  /*   background-color: aquamarine; */
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+.top_menu {
+   /*  background-color: crimson; */
+    width: 70%;
+    height: 100%;
+    float: left;  
+    text-align: center;
+    line-height: 30px; 
+}
+
+.menu_buttons > a {
+    text-decoration: none;
+    margin-left: 2rem;
+    color: var(--header-text-color) ;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+#access_button {
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 300;
+    margin: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+
+
 
 /**********
  Main
  **********/
  #site_main {
-    height: 100vh;
+    height: 33%;
     background-color: red;
 }
 /**********
  Footer
  **********/
  #site_footer {
-    height: 100vh;
+    height: 33%;
     background-color: darkslategray;
 }
